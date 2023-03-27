@@ -40,7 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 1.6em;
+  font-size: 14px;
 }
 .all_button:hover {
   opacity: 0.55;
@@ -55,7 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 1.6em;
+  font-size: 14px;
 }
 .live_button:hover {
   opacity: 0.55;
