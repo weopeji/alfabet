@@ -78,7 +78,7 @@ body {
   align-items: center;
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 .logout_btn:hover {
   cursor: pointer;
@@ -93,6 +93,8 @@ body {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .broadcast_box {
@@ -103,6 +105,7 @@ body {
 
 .broadcast_name {
   width: 15%;
+  display: flex;
 }
 
 .league {
@@ -122,6 +125,38 @@ body {
   display: block;
   background-color: white;
   margin-left: 10px;
+}
+
+.broadcast_head {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 60px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: white;
+  border-bottom: 0.1px solid #CCCCCC;
+  width: 95%;
+}
+
+.broadcast_names {
+  width: 15.5%;
+}
+
+.leagues {
+  width: 25%;
+}
+
+.teams_s {
+  width: 32%;
+}
+
+.start_plays {
+  width: 25%;
+}
+
+.watch_broadcasts {
+  width: 25%;
 }
 
 .broadcast_line {
@@ -153,6 +188,14 @@ body {
   cursor: pointer;
 }
 
+.online_ofline {
+  background-color: #43AF42;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
 .watch_broadcast {
   font-size: 2em;
 }
@@ -160,6 +203,6 @@ body {
   width: 25px;
   height: 25px;
 }
-.watch_broadcast:hover {
+.watch_broadcast img:hover {
   cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
