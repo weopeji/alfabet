@@ -1,14 +1,16 @@
 body {
   background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 .head {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background-color: #43AF42;
-  border: 1px solid black;
-  border-radius: 7px;
+  background-color: white;
+  height: 60px;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
 }
 
 .head_left {
@@ -17,11 +19,17 @@ body {
 }
 
 .logo {
-  width: 90px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 3em;
+  font-size: 40px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: flex;
 }
 
 .all_button {
@@ -29,11 +37,10 @@ body {
   height: 40px;
   margin-left: 15px;
   background-color: white;
-  border: 1px solid black;
-  border-top: 0;
-  border-radius: 15px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.6em;
 }
 .all_button:hover {
   opacity: 0.55;
@@ -45,11 +52,10 @@ body {
   height: 40px;
   margin-left: 15px;
   background-color: white;
-  border: 1px solid black;
-  border-top: 0;
-  border-radius: 15px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.6em;
 }
 .live_button:hover {
   opacity: 0.55;
@@ -57,7 +63,6 @@ body {
 }
 
 .logo_box {
-  border-right: 2px solid black;
   width: 120px;
 }
 
@@ -70,11 +75,11 @@ body {
 }
 .logout_btn:hover {
   cursor: pointer;
-  color: white;
+  color: #43AF42;
 }
 
 .broadcast {
-  margin: 25px;
+  margin: 15px;
 }
 
 .broadcast_title {
@@ -86,9 +91,7 @@ body {
 .broadcast_box {
   width: 75%;
   padding: 10px;
-  border: 1px solid black;
-  border-radius: 7px;
-  background-color: #43AF42;
+  background-color: white;
 }
 
 .broadcast_name {
@@ -110,9 +113,7 @@ body {
 .broadcast_types {
   width: 25%;
   display: block;
-  border: 1px solid black;
-  border-radius: 7px;
-  background-color: #43AF42;
+  background-color: white;
   margin-left: 10px;
 }
 
@@ -124,11 +125,7 @@ body {
   margin-bottom: 5px;
   margin-top: 5px;
   background-color: white;
-  border: 1px solid black;
-  border-top: 0;
-  border-radius: 15px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
 }
 .broadcast_line:hover {
   opacity: 0.55;
@@ -139,12 +136,11 @@ body {
   width: calc(100% - 36px);
   height: 40px;
   margin: 10px;
-  border: 1px solid black;
-  border-top: 0;
-  border-radius: 15px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
   margin-left: 18px;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .broadcast_types_name:hover {
   opacity: 0.55;
@@ -153,6 +149,10 @@ body {
 
 .watch_broadcast {
   font-size: 2em;
+}
+.watch_broadcast img {
+  width: 25px;
+  height: 25px;
 }
 .watch_broadcast:hover {
   cursor: pointer;

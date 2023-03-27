@@ -1,13 +1,14 @@
 body
     background-color: white
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin: 0
 .head
     justify-content: space-between
     display: flex
     align-items: center
-    background-color: #43AF42
-    border: 1px solid black
-    border-radius: 7px
+    background-color: white
+    height: 60px
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
 
 
 .head_left
@@ -15,28 +16,29 @@ body
     align-items: center
 
 .logo
-    width: 90px
-    height: 60px
+    width: 50px
+    height: 50px
     margin-left: auto
     margin-right: auto
-    font-size: 3em
+    font-size: 40px
+    img
+        width: 50px
+        height: 50px
+        align-items: center
+        display: flex
 
 .all_button
     width: 125px
     height: 40px
     margin-left: 15px
     background-color: white
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
+    justify-content: center
+    align-items: center
+    display: flex
+    font-size: 1.6em
     &:hover
         opacity: .55
         cursor: pointer
-
-    
-
     
 
 
@@ -45,17 +47,15 @@ body
     height: 40px
     margin-left: 15px
     background-color: white
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
+    justify-content: center
+    align-items: center
+    display: flex
+    font-size: 1.6em
     &:hover
         opacity: .55
         cursor: pointer
 
 .logo_box
-    border-right: 2px solid black
     width: 120px
     
 .logout_btn
@@ -66,10 +66,10 @@ body
     margin-right: 10px
     &:hover
         cursor: pointer
-        color: white
+        color: #43AF42
 
 .broadcast
-    margin: 25px
+    margin: 15px
 
 .broadcast_title
     justify-content: space-between
@@ -79,9 +79,7 @@ body
 .broadcast_box 
     width: 75%
     padding: 10px
-    border: 1px solid black
-    border-radius: 7px
-    background-color: #43AF42
+    background-color: white
 
 .broadcast_name
     width: 15%
@@ -98,9 +96,7 @@ body
 .broadcast_types
     width: 25%
     display: block
-    border: 1px solid black
-    border-radius: 7px
-    background-color: #43AF42
+    background-color: white
     margin-left: 10px
 
 .broadcast_line
@@ -111,11 +107,7 @@ body
     margin-bottom: 5px
     margin-top: 5px
     background-color: white
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
     &:hover
         opacity: .55
         cursor: pointer
@@ -124,12 +116,11 @@ body
     width: calc( 100% - 36px )
     height: 40px
     margin: 10px
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
     margin-left: 18px
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+    justify-content: center
+    align-items: center
+    display: flex
     &:hover
         opacity: .55
         cursor: pointer
@@ -138,6 +129,9 @@ body
 
 .watch_broadcast
     font-size: 2em
+    img
+        width: 25px
+        height: 25px
     &:hover
         cursor: pointer
 
