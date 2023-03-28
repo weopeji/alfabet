@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
 body {
   background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -26,43 +27,53 @@ body {
 }
 
 .logo {
-  width: 50px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Alkatra", cursive;
 }
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   align-items: center;
   display: flex;
+  margin-right: 10px;
+}
+.logo span {
+  margin-right: 20px;
 }
 
 .all_button {
-  width: 125px;
+  width: 100px;
   height: 40px;
-  margin-left: 15px;
   background-color: white;
   justify-content: center;
   align-items: center;
   display: flex;
   font-size: 14px;
+  font-weight: 600;
 }
 .all_button:hover {
   opacity: 0.55;
   cursor: pointer;
 }
 
+.head_right {
+  margin-right: 40px;
+}
+
 .live_button {
-  width: 125px;
+  width: 100px;
   height: 40px;
-  margin-left: 15px;
   background-color: white;
   justify-content: center;
   align-items: center;
   display: flex;
   font-size: 14px;
+  font-weight: 600;
 }
 .live_button:hover {
   opacity: 0.55;
@@ -70,17 +81,44 @@ body {
 }
 
 .logo_box {
-  width: 120px;
+  margin-left: 40px;
+}
+
+.persona {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.persona span {
+  margin-left: 8px;
 }
 
 .logout_btn {
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
   margin-right: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-.logout_btn:hover {
+.logout_btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.logout_b {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin-left: 40px;
+}
+.logout_b:hover {
   cursor: pointer;
   color: #43AF42;
 }
@@ -147,21 +185,33 @@ body {
 .broadcast_names {
   width: 15.5%;
 }
+.broadcast_names:hover {
+  opacity: 0.55;
+  cursor: pointer;
+}
 
 .leagues {
   width: 25%;
+}
+.leagues:hover {
+  opacity: 0.55;
+  cursor: pointer;
 }
 
 .teams_s {
   width: 32%;
 }
+.teams_s:hover {
+  opacity: 0.55;
+  cursor: pointer;
+}
 
 .start_plays {
   width: 25%;
 }
-
-.watch_broadcasts {
-  width: 25%;
+.start_plays:hover {
+  opacity: 0.55;
+  cursor: pointer;
 }
 
 .broadcast_line {
