@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap')
 
 
 body
-    background-color: white
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: #019BCE
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Source Sans Pro'
     margin: 0
 .head
     display: flex
@@ -49,25 +50,17 @@ body
     display: flex
     font-size: 14px
     font-weight: 600
+    margin-bottom: 4px
+    span
+        font-family: 'Source Sans Pro'
     &:hover
-        opacity: .55
         cursor: pointer
+        border-bottom: 4px solid #0072B1
+        margin-bottom: 0px
     
 .head_right
     margin-right: 40px
 
-.live_button
-    width: 100px
-    height: 40px
-    background-color: white
-    justify-content: center
-    align-items: center
-    display: flex
-    font-size: 14px
-    font-weight: 600
-    &:hover
-        opacity: .55
-        cursor: pointer
 
 .logo_box
     margin-left: 40px
@@ -103,10 +96,7 @@ body
     margin-left: 40px
     &:hover
         cursor: pointer
-        color: #43AF42
-
-.broadcast
-    margin: 15px
+        color: #0072B1
 
 .broadcast_title
     justify-content: space-between
@@ -114,11 +104,17 @@ body
     align-items: center
     width: calc( 100% - 20% )
     margin-left: 10%
+    height: 100%
+    
 
 .broadcast_box 
     width: 75%
-    padding: 10px
     background-color: white
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+    height: 100% 
+    span
+        font-family: 'Source Sans Pro'
+
 
 .broadcast_name
     width: 15%
@@ -135,9 +131,14 @@ body
 
 .broadcast_types
     width: 25%
+    height: calc(100vh - 70px)
     display: block
     background-color: white
-    margin-left: 40px
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+    span
+        font-family: 'Source Sans Pro'
+
+.broadcast_types_block
     margin-top: 60px
 
 .broadcast_head
@@ -148,8 +149,8 @@ body
     margin-bottom: 5px
     margin-top: 5px
     background-color: white
-    border-bottom: 0.1px solid #CCCCCC
-    width: calc( 100% - 5% )
+    border-bottom: 0.1px solid #969696
+    width: 100%
     color: #4B4B4B
     img
         width: 9px
@@ -157,25 +158,21 @@ body
 .broadcast_names
     width: 15.5%
     &:hover
-        opacity: .55
         cursor: pointer
 
 .leagues
     width: 25%
     &:hover
-        opacity: .55
         cursor: pointer
 
 .teams_s
     width: 32%
     &:hover
-        opacity: .55
         cursor: pointer
 
 .start_plays
     width: 25%
     &:hover
-        opacity: .55
         cursor: pointer
 
 .broadcast_line
@@ -186,21 +183,22 @@ body
     margin-bottom: 5px
     margin-top: 5px
     background-color: white
+    border-bottom: .5px solid #969696
     &:hover
-        opacity: .55
         cursor: pointer
 
 .broadcast_types_name
     width: calc( 100% - 36px )
-    height: 40px
-    margin: 10px
+    height: 60px
     margin-left: 18px
     align-items: center
     display: flex
     font-weight: 600
     &:hover
-        opacity: .55
         cursor: pointer
+
+.broadcast_types_all
+    border-bottom: .5px solid #969696
 
 .online_ofline
     background-color: #43AF42
@@ -216,5 +214,9 @@ body
         height: 25px
         &:hover
             cursor: pointer
+
+.broadcast
+    height: calc(100vh - 70px)
+
 
 

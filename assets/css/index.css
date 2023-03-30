@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 body {
-  background-color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #019BCE;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Source Sans Pro";
   margin: 0;
 }
 
@@ -56,29 +57,19 @@ body {
   display: flex;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 4px;
+}
+.all_button span {
+  font-family: "Source Sans Pro";
 }
 .all_button:hover {
-  opacity: 0.55;
   cursor: pointer;
+  border-bottom: 4px solid #0072B1;
+  margin-bottom: 0px;
 }
 
 .head_right {
   margin-right: 40px;
-}
-
-.live_button {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 14px;
-  font-weight: 600;
-}
-.live_button:hover {
-  opacity: 0.55;
-  cursor: pointer;
 }
 
 .logo_box {
@@ -121,11 +112,7 @@ body {
 }
 .logout_b:hover {
   cursor: pointer;
-  color: #43AF42;
-}
-
-.broadcast {
-  margin: 15px;
+  color: #0072B1;
 }
 
 .broadcast_title {
@@ -134,12 +121,17 @@ body {
   align-items: center;
   width: 80%;
   margin-left: 10%;
+  height: 100%;
 }
 
 .broadcast_box {
   width: 75%;
-  padding: 10px;
   background-color: white;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
+  height: 100%;
+}
+.broadcast_box span {
+  font-family: "Source Sans Pro";
 }
 
 .broadcast_name {
@@ -161,9 +153,16 @@ body {
 
 .broadcast_types {
   width: 25%;
+  height: calc(100vh - 70px);
   display: block;
   background-color: white;
-  margin-left: 40px;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
+}
+.broadcast_types span {
+  font-family: "Source Sans Pro";
+}
+
+.broadcast_types_block {
   margin-top: 60px;
 }
 
@@ -175,8 +174,8 @@ body {
   margin-bottom: 5px;
   margin-top: 5px;
   background-color: white;
-  border-bottom: 0.1px solid #CCCCCC;
-  width: 95%;
+  border-bottom: 0.1px solid #969696;
+  width: 100%;
   color: #4B4B4B;
 }
 .broadcast_head img {
@@ -187,7 +186,6 @@ body {
   width: 15.5%;
 }
 .broadcast_names:hover {
-  opacity: 0.55;
   cursor: pointer;
 }
 
@@ -195,7 +193,6 @@ body {
   width: 25%;
 }
 .leagues:hover {
-  opacity: 0.55;
   cursor: pointer;
 }
 
@@ -203,7 +200,6 @@ body {
   width: 32%;
 }
 .teams_s:hover {
-  opacity: 0.55;
   cursor: pointer;
 }
 
@@ -211,7 +207,6 @@ body {
   width: 25%;
 }
 .start_plays:hover {
-  opacity: 0.55;
   cursor: pointer;
 }
 
@@ -223,24 +218,26 @@ body {
   margin-bottom: 5px;
   margin-top: 5px;
   background-color: white;
+  border-bottom: 0.5px solid #969696;
 }
 .broadcast_line:hover {
-  opacity: 0.55;
   cursor: pointer;
 }
 
 .broadcast_types_name {
   width: calc(100% - 36px);
-  height: 40px;
-  margin: 10px;
+  height: 60px;
   margin-left: 18px;
   align-items: center;
   display: flex;
   font-weight: 600;
 }
 .broadcast_types_name:hover {
-  opacity: 0.55;
   cursor: pointer;
+}
+
+.broadcast_types_all {
+  border-bottom: 0.5px solid #969696;
 }
 
 .online_ofline {
@@ -260,4 +257,8 @@ body {
 }
 .watch_broadcast img:hover {
   cursor: pointer;
+}
+
+.broadcast {
+  height: calc(100vh - 70px);
 }/*# sourceMappingURL=index.css.map */
