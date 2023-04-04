@@ -160,6 +160,7 @@ body {
 }
 .broadcast_types span {
   font-family: "Source Sans Pro";
+  font-size: 13px;
 }
 
 .broadcast_types_block {
@@ -218,7 +219,7 @@ body {
   margin-bottom: 5px;
   margin-top: 5px;
   background-color: white;
-  border-bottom: 0.5px solid #969696;
+  border-bottom: 0.5px solid #cacaca;
 }
 .broadcast_line:hover {
   cursor: pointer;
@@ -226,18 +227,18 @@ body {
 
 .broadcast_types_name {
   width: calc(100% - 36px);
-  height: 60px;
+  height: 40px;
   margin-left: 18px;
   align-items: center;
   display: flex;
-  font-weight: 600;
+  font-weight: 400;
 }
 .broadcast_types_name:hover {
   cursor: pointer;
 }
 
 .broadcast_types_all {
-  border-bottom: 0.5px solid #969696;
+  border-bottom: 0.5px solid #cacaca;
 }
 
 .online_ofline {
