@@ -184,31 +184,35 @@ body {
 }
 
 .broadcast_names {
-  width: 15.5%;
+  width: 15%;
 }
 .broadcast_names:hover {
   cursor: pointer;
 }
 
 .leagues {
-  width: 25%;
+  width: 20%;
 }
 .leagues:hover {
   cursor: pointer;
 }
 
 .teams_s {
-  width: 32%;
+  width: 25%;
 }
 .teams_s:hover {
   cursor: pointer;
 }
 
 .start_plays {
-  width: 25%;
+  width: 20%;
 }
 .start_plays:hover {
   cursor: pointer;
+}
+
+.watch_broadcasts {
+  width: 20%;
 }
 
 .broadcast_line {

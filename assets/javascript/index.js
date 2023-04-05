@@ -22,27 +22,6 @@
             teams: "Pizdaliniya - Pipizdada",
             start_play: "13:00",
         },
-        {
-            name: "Football",
-            id: '12453',
-            league: "Euro",
-            teams: "Slovenia - San Marino",
-            start_play: "19:00",
-        },
-        {
-            name: "Football",
-            id: '12453',
-            league: "Euro",
-            teams: "Slovenia - San Marino",
-            start_play: "19:00",
-        },
-        {
-            name: "Football",
-            id: '12453',
-            league: "Euro",
-            teams: "Slovenia - San Marino",
-            start_play: "19:00",
-        },
     ];
 
     $('.broadcast_box .broadcast_line').remove();
