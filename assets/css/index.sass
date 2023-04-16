@@ -1,90 +1,124 @@
-body
-    background-color: white
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap')
 
+
+body
+    background-color: #0072B1
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Source Sans Pro'
+    margin: 0
 .head
-    justify-content: space-between
     display: flex
     align-items: center
-    background-color: #43AF42
-    border: 1px solid black
-    border-radius: 7px
+    background-color: white
+    height: 60px
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
 
-
+.head_all
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: calc( 100% - 20% )
+    margin-left: 10%
 .head_left
     display: flex
     align-items: center
 
 .logo
-    width: 90px
-    height: 60px
+    height: 50px
     margin-left: auto
     margin-right: auto
-    font-size: 3em
+    font-size: 20px
+    display: flex
+    align-items: center
+    font-family: 'Alkatra', cursive
+    img
+        width: 30px
+        height: 30px
+        align-items: center
+        display: flex
+        margin-right: 10px
+    span
+        margin-right: 20px
+        margin-top: 7px
 
 .all_button
-    width: 125px
+    width: 100px
     height: 40px
-    margin-left: 15px
     background-color: white
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
+    justify-content: center
+    align-items: center
+    display: flex
+    font-size: 14px
+    font-weight: 600
+    margin-bottom: 4px
+    span
+        font-family: 'Source Sans Pro'
     &:hover
-        opacity: .55
         cursor: pointer
-
+        border-bottom: 4px solid #0072B1
+        margin-bottom: 0px
     
+.head_right
+    margin-right: 40px
 
-    
-
-
-.live_button
-    width: 125px
-    height: 40px
-    margin-left: 15px
-    background-color: white
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
-    &:hover
-        opacity: .55
-        cursor: pointer
 
 .logo_box
-    border-right: 2px solid black
-    width: 120px
+    margin-left: 40px
     
+.persona
+    width: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 12px
+    white-space: nowrap
+    span
+        margin-left: 8px
+    img
+        width: 26px
+        height: 26px
+
 .logout_btn
     justify-content: center
     align-items: center
-    width: 20px
-    height: 20px
-    margin-right: 10px
+    margin-right: 40px
+    justify-content: center
+    align-items: center
+    display: flex
+
+.logout_b
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    display: flex
+    margin-left: 40px
     &:hover
         cursor: pointer
-        color: white
-
-.broadcast
-    margin: 25px
+        color: #0072B1
 
 .broadcast_title
     justify-content: space-between
     display: flex
     align-items: center
+    width: calc( 100% - 20% )
+    margin-left: 10%
+    height: 100%
+    
 
 .broadcast_box 
     width: 75%
-    padding: 10px
-    border: 1px solid black
-    border-radius: 7px
-    background-color: #43AF42
+    background-color: white
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+    height: 100% 
+    span
+        font-family: 'Source Sans Pro'
+
 
 .broadcast_name
     width: 15%
+    display: flex
 
 .league
     width: 20%
@@ -97,11 +131,55 @@ body
 
 .broadcast_types
     width: 25%
+    height: calc(100vh - 70px)
     display: block
-    border: 1px solid black
-    border-radius: 7px
-    background-color: #43AF42
-    margin-left: 10px
+    background-color: white
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+    span
+        font-family: 'Source Sans Pro'
+        font-size: 13px
+
+.broadcast_types_block
+    margin-top: 60px
+
+.broadcast_head
+    display: flex
+    align-items: center
+    padding-left: 10px
+    height: 60px
+    margin-bottom: 5px
+    margin-top: 5px
+    background-color: white
+    border-bottom: 0.1px solid #969696
+    width: 100%
+    color: #4B4B4B
+    img
+        width: 9px
+
+.broadcast_names
+    width: 15%
+    &:hover
+        cursor: pointer
+
+.leagues
+    width: 20%
+    &:hover
+        cursor: pointer
+
+.teams_s
+    width: 35%
+    &:hover
+        cursor: pointer
+
+.start_plays
+    width: 20%
+    margin-left: 
+    &:hover
+        cursor: pointer
+
+.watch_broadcasts
+    width: 10%
+    
 
 .broadcast_line
     display: flex
@@ -111,35 +189,40 @@ body
     margin-bottom: 5px
     margin-top: 5px
     background-color: white
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
+    border-bottom: .5px solid #cacaca
     &:hover
-        opacity: .55
         cursor: pointer
 
 .broadcast_types_name
-    width: 280px
+    width: calc( 100% - 36px )
     height: 40px
-    margin: 10px
-    border: 1px solid black
-    border-top: 0
-    border-radius: 15px
-    border-top-left-radius: 0
-    border-top-right-radius: 0
     margin-left: 18px
+    align-items: center
+    display: flex
+    font-weight: 400
     &:hover
-        opacity: .55
         cursor: pointer
 
+.broadcast_types_all
+    border-bottom: .5px solid #cacaca
 
+.online_ofline
+    background-color: #43AF42
+    border-radius: 50%
+    width: 24px
+    height: 24px
+    margin-right: 15px
 
 .watch_broadcast
     font-size: 2em
-    &:hover
-        cursor: pointer
+    img
+        width: 25px
+        height: 25px
+        &:hover
+            cursor: pointer
+
+.broadcast
+    height: calc(100vh - 70px)
 
 
 
