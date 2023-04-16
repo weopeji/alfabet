@@ -1,33 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
-body {
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+.main_page {
   background-color: #0072B1;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Source Sans Pro";
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-
-.head {
+.main_page .head {
   display: flex;
   align-items: center;
   background-color: white;
   height: 60px;
   box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
 }
-
-.head_all {
+.main_page .head_all {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin-left: 10%;
 }
-
-.head_left {
+.main_page .head_left {
   display: flex;
   align-items: center;
 }
-
-.logo {
+.main_page .logo {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -36,19 +38,18 @@ body {
   align-items: center;
   font-family: "Alkatra", cursive;
 }
-.logo img {
+.main_page .logo img {
   width: 30px;
   height: 30px;
   align-items: center;
   display: flex;
   margin-right: 10px;
 }
-.logo span {
+.main_page .logo span {
   margin-right: 20px;
   margin-top: 7px;
 }
-
-.all_button {
+.main_page .all_button {
   width: 100px;
   height: 40px;
   background-color: white;
@@ -59,24 +60,21 @@ body {
   font-weight: 600;
   margin-bottom: 4px;
 }
-.all_button span {
+.main_page .all_button span {
   font-family: "Source Sans Pro";
 }
-.all_button:hover {
+.main_page .all_button:hover {
   cursor: pointer;
   border-bottom: 4px solid #0072B1;
   margin-bottom: 0px;
 }
-
-.head_right {
+.main_page .head_right {
   margin-right: 40px;
 }
-
-.logo_box {
+.main_page .logo_box {
   margin-left: 40px;
 }
-
-.persona {
+.main_page .persona {
   width: 40px;
   height: 40px;
   display: flex;
@@ -85,15 +83,14 @@ body {
   font-size: 12px;
   white-space: nowrap;
 }
-.persona span {
+.main_page .persona span {
   margin-left: 8px;
 }
-.persona img {
+.main_page .persona img {
   width: 26px;
   height: 26px;
 }
-
-.logout_btn {
+.main_page .logout_btn {
   justify-content: center;
   align-items: center;
   margin-right: 40px;
@@ -101,8 +98,7 @@ body {
   align-items: center;
   display: flex;
 }
-
-.logout_b {
+.main_page .logout_b {
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -110,12 +106,11 @@ body {
   display: flex;
   margin-left: 40px;
 }
-.logout_b:hover {
+.main_page .logout_b:hover {
   cursor: pointer;
   color: #0072B1;
 }
-
-.broadcast_title {
+.main_page .broadcast_title {
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -123,51 +118,43 @@ body {
   margin-left: 10%;
   height: 100%;
 }
-
-.broadcast_box {
+.main_page .broadcast_box {
   width: 75%;
   background-color: white;
   box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
   height: 100%;
 }
-.broadcast_box span {
+.main_page .broadcast_box span {
   font-family: "Source Sans Pro";
 }
-
-.broadcast_name {
+.main_page .broadcast_name {
   width: 15%;
   display: flex;
 }
-
-.league {
+.main_page .league {
   width: 20%;
 }
-
-.teams {
+.main_page .teams {
   width: 35%;
 }
-
-.start_play {
+.main_page .start_play {
   width: 20%;
 }
-
-.broadcast_types {
+.main_page .broadcast_types {
   width: 25%;
   height: calc(100vh - 70px);
   display: block;
   background-color: white;
   box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
 }
-.broadcast_types span {
+.main_page .broadcast_types span {
   font-family: "Source Sans Pro";
   font-size: 13px;
 }
-
-.broadcast_types_block {
+.main_page .broadcast_types_block {
   margin-top: 60px;
 }
-
-.broadcast_head {
+.main_page .broadcast_head {
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -179,43 +166,37 @@ body {
   width: 100%;
   color: #4B4B4B;
 }
-.broadcast_head img {
+.main_page .broadcast_head img {
   width: 9px;
 }
-
-.broadcast_names {
+.main_page .broadcast_names {
   width: 15%;
 }
-.broadcast_names:hover {
+.main_page .broadcast_names:hover {
   cursor: pointer;
 }
-
-.leagues {
+.main_page .leagues {
   width: 20%;
 }
-.leagues:hover {
+.main_page .leagues:hover {
   cursor: pointer;
 }
-
-.teams_s {
-  width: 25%;
+.main_page .teams_s {
+  width: 35%;
 }
-.teams_s:hover {
+.main_page .teams_s:hover {
   cursor: pointer;
 }
-
-.start_plays {
+.main_page .start_plays {
   width: 20%;
 }
-.start_plays:hover {
+.main_page .start_plays:hover {
   cursor: pointer;
 }
-
-.watch_broadcasts {
-  width: 20%;
+.main_page .watch_broadcasts {
+  width: 10%;
 }
-
-.broadcast_line {
+.main_page .broadcast_line {
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -225,11 +206,10 @@ body {
   background-color: white;
   border-bottom: 0.5px solid #cacaca;
 }
-.broadcast_line:hover {
+.main_page .broadcast_line:hover {
   cursor: pointer;
 }
-
-.broadcast_types_name {
+.main_page .broadcast_types_name {
   width: calc(100% - 36px);
   height: 40px;
   margin-left: 18px;
@@ -237,33 +217,299 @@ body {
   display: flex;
   font-weight: 400;
 }
-.broadcast_types_name:hover {
+.main_page .broadcast_types_name:hover {
   cursor: pointer;
 }
-
-.broadcast_types_all {
+.main_page .broadcast_types_all {
   border-bottom: 0.5px solid #cacaca;
 }
-
-.online_ofline {
+.main_page .online_ofline {
   background-color: #43AF42;
   border-radius: 50%;
   width: 24px;
   height: 24px;
   margin-right: 15px;
 }
-
-.watch_broadcast {
+.main_page .watch_broadcast {
   font-size: 2em;
 }
-.watch_broadcast img {
+.main_page .watch_broadcast img {
   width: 25px;
   height: 25px;
 }
-.watch_broadcast img:hover {
+.main_page .watch_broadcast img:hover {
   cursor: pointer;
 }
-
-.broadcast {
+.main_page .broadcast {
   height: calc(100vh - 70px);
+}
+
+.registration_page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.registration_page section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.registration_page .section_bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+.registration_page .form-box {
+  position: relative;
+  z-index: 3;
+  width: 500px;
+  height: 650px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.5px solid #c9c9c9;
+  border-right: 0.5px solid #c9c9c9;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  opacity: 1;
+  padding-bottom: 30px;
+}
+.registration_page .form-value {
+  padding-top: 40px;
+}
+.registration_page h2 {
+  text-align: center;
+}
+.registration_page .input-box {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+}
+.registration_page .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #313131;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.registration_page input:valid ~ label {
+  top: -13px;
+}
+.registration_page input:focus ~ label {
+  top: -13px;
+}
+.registration_page .input-box label {
+  top: 20px;
+}
+.registration_page .input-box input {
+  width: 100%;
+  height: 40px;
+  background: white;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 -35px;
+  color: black;
+  border: 0.5px solid #D9D9D9;
+  border-radius: 2px;
+  padding-left: 10px;
+  width: calc(100% - 10px);
+}
+.registration_page .input-box ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #2C2C2C;
+  font-size: 1.2em;
+  top: 12px;
+}
+.registration_page .forget {
+  margin: 60px 0 15px;
+  font-size: 0.7em;
+  color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+}
+.registration_page .check_box {
+  position: relative;
+  top: 2px;
+}
+.registration_page .forget label a:hover {
+  text-decoration: underline;
+}
+.registration_page button {
+  width: 100%;
+  height: 40px;
+  background: #0072B1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
+}
+
+.login_page {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.login_page section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.login_page .section_bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+.login_page .form-box {
+  position: relative;
+  z-index: 3;
+  width: 500px;
+  height: 650px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.5px solid #c9c9c9;
+  border-right: 0.5px solid #c9c9c9;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  opacity: 1;
+  padding-bottom: 30px;
+}
+.login_page .form-value {
+  padding-top: 40px;
+}
+.login_page h2 {
+  text-align: center;
+}
+.login_page .input-box {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+}
+.login_page .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #313131;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.login_page input:valid ~ label {
+  top: -13px;
+}
+.login_page input:focus ~ label {
+  top: -13px;
+}
+.login_page .input-box label {
+  top: 20px;
+}
+.login_page .input-box input {
+  width: 100%;
+  height: 40px;
+  background: white;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 -35px;
+  color: black;
+  border: 0.5px solid #D9D9D9;
+  border-radius: 2px;
+  padding-left: 10px;
+  width: calc(100% - 10px);
+}
+.login_page .input-box ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #2C2C2C;
+  font-size: 1.2em;
+  top: 12px;
+}
+.login_page .forget {
+  margin: 60px 0 15px;
+  font-size: 0.7em;
+  color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+}
+.login_page .check_box {
+  position: relative;
+  top: 2px;
+}
+.login_page .forget label {
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.44);
+  font-weight: 700;
+}
+.login_page .forget label a {
+  color: #2C2C2C;
+  text-decoration: none;
+}
+.login_page .forget label a:hover {
+  text-decoration: underline;
+}
+.login_page button {
+  width: 100%;
+  height: 40px;
+  background: #0072B1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
+}
+.login_page .register {
+  font-size: 0.7em;
+  color: #2C2C2C;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.login_page .register p {
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.44);
+  font-weight: 600;
+}
+.login_page .register p a {
+  text-decoration: none;
+  color: #2C2C2C;
+  font-weight: 700;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.44);
+}
+.login_page .register p a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */

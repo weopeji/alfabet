@@ -1,228 +1,504 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap')
-
-
-body
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap')
+.main_page
     background-color: #0072B1
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Source Sans Pro'
     margin: 0
-.head
-    display: flex
-    align-items: center
-    background-color: white
-    height: 60px
-    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+    width: 100vw
+    height: 100vh
+    position: relative
+    overflow-x: hidden
+    overflow-y: scroll
 
-.head_all
-    display: flex
-    justify-content: space-between
-    align-items: center
-    width: calc( 100% - 20% )
-    margin-left: 10%
-.head_left
-    display: flex
-    align-items: center
+    .head
+        display: flex
+        align-items: center
+        background-color: white
+        height: 60px
+        box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
 
-.logo
-    height: 50px
-    margin-left: auto
-    margin-right: auto
-    font-size: 20px
-    display: flex
-    align-items: center
-    font-family: 'Alkatra', cursive
-    img
-        width: 30px
-        height: 30px
+    .head_all
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: calc( 100% - 20% )
+        margin-left: 10%
+    .head_left
+        display: flex
+        align-items: center
+
+    .logo
+        height: 50px
+        margin-left: auto
+        margin-right: auto
+        font-size: 20px
+        display: flex
+        align-items: center
+        font-family: 'Alkatra', cursive
+        img
+            width: 30px
+            height: 30px
+            align-items: center
+            display: flex
+            margin-right: 10px
+        span
+            margin-right: 20px
+            margin-top: 7px
+
+    .all_button
+        width: 100px
+        height: 40px
+        background-color: white
+        justify-content: center
         align-items: center
         display: flex
-        margin-right: 10px
-    span
-        margin-right: 20px
-        margin-top: 7px
-
-.all_button
-    width: 100px
-    height: 40px
-    background-color: white
-    justify-content: center
-    align-items: center
-    display: flex
-    font-size: 14px
-    font-weight: 600
-    margin-bottom: 4px
-    span
-        font-family: 'Source Sans Pro'
-    &:hover
-        cursor: pointer
-        border-bottom: 4px solid #0072B1
-        margin-bottom: 0px
-    
-.head_right
-    margin-right: 40px
+        font-size: 14px
+        font-weight: 600
+        margin-bottom: 4px
+        span
+            font-family: 'Source Sans Pro'
+        &:hover
+            cursor: pointer
+            border-bottom: 4px solid #0072B1
+            margin-bottom: 0px
+        
+    .head_right
+        margin-right: 40px
 
 
-.logo_box
-    margin-left: 40px
-    
-.persona
-    width: 40px
-    height: 40px
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 12px
-    white-space: nowrap
-    span
-        margin-left: 8px
-    img
-        width: 26px
-        height: 26px
+    .logo_box
+        margin-left: 40px
+        
+    .persona
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 12px
+        white-space: nowrap
+        span
+            margin-left: 8px
+        img
+            width: 26px
+            height: 26px
 
-.logout_btn
-    justify-content: center
-    align-items: center
-    margin-right: 40px
-    justify-content: center
-    align-items: center
-    display: flex
+    .logout_btn
+        justify-content: center
+        align-items: center
+        margin-right: 40px
+        justify-content: center
+        align-items: center
+        display: flex
 
-.logout_b
-    justify-content: center
-    align-items: center
-    width: 40px
-    height: 40px
-    display: flex
-    margin-left: 40px
-    &:hover
-        cursor: pointer
-        color: #0072B1
+    .logout_b
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        display: flex
+        margin-left: 40px
+        &:hover
+            cursor: pointer
+            color: #0072B1
 
-.broadcast_title
-    justify-content: space-between
-    display: flex
-    align-items: center
-    width: calc( 100% - 20% )
-    margin-left: 10%
-    height: 100%
-    
+    .broadcast_title
+        justify-content: space-between
+        display: flex
+        align-items: center
+        width: calc( 100% - 20% )
+        margin-left: 10%
+        height: 100%
+        
 
-.broadcast_box 
-    width: 75%
-    background-color: white
-    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
-    height: 100% 
-    span
-        font-family: 'Source Sans Pro'
+    .broadcast_box 
+        width: 75%
+        background-color: white
+        box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+        height: 100% 
+        span
+            font-family: 'Source Sans Pro'
 
 
-.broadcast_name
-    width: 15%
-    display: flex
+    .broadcast_name
+        width: 15%
+        display: flex
 
-.league
-    width: 20%
+    .league
+        width: 20%
 
-.teams
-    width: 35%
+    .teams
+        width: 35%
 
-.start_play
-    width: 20%
+    .start_play
+        width: 20%
 
-.broadcast_types
-    width: 25%
-    height: calc(100vh - 70px)
-    display: block
-    background-color: white
-    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
-    span
-        font-family: 'Source Sans Pro'
-        font-size: 13px
+    .broadcast_types
+        width: 25%
+        height: calc(100vh - 70px)
+        display: block
+        background-color: white
+        box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+        span
+            font-family: 'Source Sans Pro'
+            font-size: 13px
 
-.broadcast_types_block
-    margin-top: 60px
+    .broadcast_types_block
+        margin-top: 60px
 
-.broadcast_head
-    display: flex
-    align-items: center
-    padding-left: 10px
-    height: 60px
-    margin-bottom: 5px
-    margin-top: 5px
-    background-color: white
-    border-bottom: 0.1px solid #969696
-    width: 100%
-    color: #4B4B4B
-    img
-        width: 9px
+    .broadcast_head
+        display: flex
+        align-items: center
+        padding-left: 10px
+        height: 60px
+        margin-bottom: 5px
+        margin-top: 5px
+        background-color: white
+        border-bottom: 0.1px solid #969696
+        width: 100%
+        color: #4B4B4B
+        img
+            width: 9px
 
-.broadcast_names
-    width: 15%
-    &:hover
-        cursor: pointer
-
-.leagues
-    width: 20%
-    &:hover
-        cursor: pointer
-
-.teams_s
-    width: 35%
-    &:hover
-        cursor: pointer
-
-.start_plays
-    width: 20%
-    margin-left: 
-    &:hover
-        cursor: pointer
-
-.watch_broadcasts
-    width: 10%
-    
-
-.broadcast_line
-    display: flex
-    align-items: center
-    padding-left: 10px
-    height: 60px
-    margin-bottom: 5px
-    margin-top: 5px
-    background-color: white
-    border-bottom: .5px solid #cacaca
-    &:hover
-        cursor: pointer
-
-.broadcast_types_name
-    width: calc( 100% - 36px )
-    height: 40px
-    margin-left: 18px
-    align-items: center
-    display: flex
-    font-weight: 400
-    &:hover
-        cursor: pointer
-
-.broadcast_types_all
-    border-bottom: .5px solid #cacaca
-
-.online_ofline
-    background-color: #43AF42
-    border-radius: 50%
-    width: 24px
-    height: 24px
-    margin-right: 15px
-
-.watch_broadcast
-    font-size: 2em
-    img
-        width: 25px
-        height: 25px
+    .broadcast_names
+        width: 15%
         &:hover
             cursor: pointer
 
-.broadcast
-    height: calc(100vh - 70px)
+    .leagues
+        width: 20%
+        &:hover
+            cursor: pointer
 
+    .teams_s
+        width: 35%
+        &:hover
+            cursor: pointer
+
+    .start_plays
+        width: 20%
+        &:hover
+            cursor: pointer
+
+    .watch_broadcasts
+        width: 10%
+        
+
+    .broadcast_line
+        display: flex
+        align-items: center
+        padding-left: 10px
+        height: 60px
+        margin-bottom: 5px
+        margin-top: 5px
+        background-color: white
+        border-bottom: .5px solid #cacaca
+        &:hover
+            cursor: pointer
+
+    .broadcast_types_name
+        width: calc( 100% - 36px )
+        height: 40px
+        margin-left: 18px
+        align-items: center
+        display: flex
+        font-weight: 400
+        &:hover
+            cursor: pointer
+
+    .broadcast_types_all
+        border-bottom: .5px solid #cacaca
+
+    .online_ofline
+        background-color: #43AF42
+        border-radius: 50%
+        width: 24px
+        height: 24px
+        margin-right: 15px
+
+    .watch_broadcast
+        font-size: 2em
+        img
+            width: 25px
+            height: 25px
+            &:hover
+                cursor: pointer
+
+    .broadcast
+        height: calc(100vh - 70px)
+
+.registration_page
+    width: 100vw
+    height: 100vh
+    position: relative
+    overflow-x: hidden
+    overflow-y: scroll
+
+    section
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 100vh
+        width: 100%
+        background-color: #fff
+        background-size: cover
+        background-position: center
+
+    .section_bkg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        z-index: 2
+
+    .form-box
+        position: relative
+        z-index: 3
+        width: 500px
+        height: 650px
+        background: transparent
+        display: flex
+        justify-content: center
+        align-items: center
+        border-left: 0.5px solid #c9c9c9
+        border-right: 0.5px solid #c9c9c9
+        backdrop-filter: blur(50px)
+        opacity: 1
+        padding-bottom: 30px
+
+    .form-value
+        padding-top: 40px
+    h2
+        text-align: center
+
+
+
+    .input-box
+        position: relative
+        margin: 30px 0 
+        width: 310px
+
+    .input-box 
+        label
+            position: absolute
+            top: 50%
+            left: 5px
+            transform: translateY(-50%)
+            color: #313131
+            font-size: 1em
+            pointer-events: none
+            transition: .5s
+            font-weight: 600
+
+    input:valid ~ label
+        top: -13px
+
+    input:focus ~ label
+        top: -13px
+
+    .input-box 
+        label
+            top: 20px
+        input 
+            width: 100%
+            height: 40px
+            background: white
+            outline: none
+            font-size: 1em
+            padding: 0 35px 0 -35px 
+            color: black
+            border: .5px solid #D9D9D9
+            border-radius: 2px
+            padding-left: 10px
+            width: calc( 100% - 10px )
+
+    .input-box
+        ion-icon
+            position: absolute
+            right: 8px
+            color: #2C2C2C
+            font-size: 1.2em
+            top: 12px
+
+    .forget
+        margin: 60px 0 15px
+        font-size: .7em
+        color: #2C2C2C
+        display: flex
+        justify-content: center
+
+    .check_box
+        position: relative
+        top: 2px
+
+    .forget
+        label
+            a:hover
+                text-decoration: underline
+
+    button
+        width: 100%
+        height: 40px
+        background: #0072B1
+        border: none
+        outline: none
+        cursor: pointer
+        font-size: 1em
+        font-weight: 600
+        color: #fff
+        box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+
+.login_page
+    padding: 0
+    margin: 0 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    width: 100vw
+    height: 100vh
+    position: relative
+    overflow-x: hidden
+    overflow-y: scroll
+
+    section
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 100vh
+        width: 100%
+        background-color: #fff
+        background-size: cover
+        background-position: center
+
+    .section_bkg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        z-index: 2
+
+    .form-box
+        position: relative
+        z-index: 3
+        width: 500px
+        height: 650px
+        background: transparent
+        display: flex
+        justify-content: center
+        align-items: center
+        border-left: 0.5px solid #c9c9c9
+        border-right: 0.5px solid #c9c9c9
+        backdrop-filter: blur(50px)
+        opacity: 1
+        padding-bottom: 30px
+
+    .form-value
+        padding-top: 40px
+    h2
+        text-align: center
+
+
+
+    .input-box
+        position: relative
+        margin: 30px 0 
+        width: 310px
+
+    .input-box 
+        label
+            position: absolute
+            top: 50%
+            left: 5px
+            transform: translateY(-50%)
+            color: #313131
+            font-size: 1em
+            pointer-events: none
+            transition: .5s
+            font-weight: 600
+
+    input:valid ~ label
+        top: -13px
+
+    input:focus ~ label
+        top: -13px
+
+    .input-box 
+        label
+            top: 20px
+        input 
+            width: 100%
+            height: 40px
+            background: white
+            outline: none
+            font-size: 1em
+            padding: 0 35px 0 -35px 
+            color: black
+            border: .5px solid #D9D9D9
+            border-radius: 2px
+            padding-left: 10px
+            width: calc( 100% - 10px )
+
+    .input-box
+        ion-icon
+            position: absolute
+            right: 8px
+            color: #2C2C2C
+            font-size: 1.2em
+            top: 12px
+
+    .forget
+        margin: 60px 0 15px
+        font-size: .7em
+        color: #2C2C2C
+        display: flex
+        justify-content: center
+
+    .check_box
+        position: relative
+        top: 2px
+
+    .forget 
+        label
+            text-shadow: 0px 4px 5px rgba(0,0,0,0.44)
+            font-weight: 700
+            a
+                color: #2C2C2C
+                text-decoration: none
+
+    .forget
+        label
+            a:hover
+                text-decoration: underline
+
+    button
+        width: 100%
+        height: 40px
+        background: #0072B1
+        border: none
+        outline: none
+        cursor: pointer
+        font-size: 1em
+        font-weight: 600
+        color: #fff
+        box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.75)
+
+    .register
+        font-size: .7em
+        color: #2C2C2C
+        text-align: center
+        margin: 25px 0 10px
+        p 
+            text-shadow: 0px 4px 5px rgba(0,0,0,0.44)
+            font-weight: 600
+            a   
+                text-decoration: none
+                color: #2C2C2C
+                font-weight: 700
+                text-shadow: 0px 4px 5px rgba(0,0,0,0.44)
+            a:hover
+                text-decoration: underline 
 
 
