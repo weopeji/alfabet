@@ -1,0 +1,672 @@
+var sports = [
+    {
+      "featureOrder": -1,
+      "id": 1,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Badminton",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 2,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Bandy",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 3,
+      "id": 3,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 48,
+      "matchupCountSE": 48,
+      "name": "Baseball",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 4,
+      "id": 4,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 386,
+      "matchupCountSE": 384,
+      "name": "Basketball",
+      "primaryMarketType": "spread"
+    },
+    {
+      "featureOrder": -1,
+      "id": 5,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Beach Volleyball",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 6,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 18,
+      "matchupCountSE": 18,
+      "name": "Boxing",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 7,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Chess",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 6,
+      "id": 8,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 38,
+      "matchupCountSE": 38,
+      "name": "Cricket",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 9,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Curling",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 10,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 9,
+      "matchupCountSE": 9,
+      "name": "Darts",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 1,
+      "id": 12,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 219,
+      "matchupCountSE": 205,
+      "name": "E Sports",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 13,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Field Hockey",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 14,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Floorball",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 15,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 35,
+      "matchupCountSE": 35,
+      "name": "Football",
+      "primaryMarketType": "spread"
+    },
+    {
+      "featureOrder": -1,
+      "id": 16,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 3,
+      "matchupCountSE": 3,
+      "name": "Futsal",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 17,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 213,
+      "matchupCountSE": 124,
+      "name": "Golf",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 18,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 41,
+      "matchupCountSE": 39,
+      "name": "Handball",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 5,
+      "id": 19,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 55,
+      "matchupCountSE": 38,
+      "name": "Hockey",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 20,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 1,
+      "matchupCountSE": 1,
+      "name": "Horse Racing",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 21,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Lacrosse",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 22,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 55,
+      "matchupCountSE": 55,
+      "name": "Mixed Martial Arts",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 23,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Other Sports",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 24,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 1,
+      "matchupCountSE": 1,
+      "name": "Politics",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 26,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 13,
+      "matchupCountSE": 13,
+      "name": "Rugby League",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 27,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 26,
+      "matchupCountSE": 26,
+      "name": "Rugby Union",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 28,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "Snooker",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 0,
+      "id": 29,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 1243,
+      "matchupCountSE": 1097,
+      "name": "Soccer",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 30,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Softball",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 31,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Squash",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 32,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 5,
+      "matchupCountSE": 5,
+      "name": "Table Tennis",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 2,
+      "id": 33,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 100,
+      "matchupCountSE": 78,
+      "name": "Tennis",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": 7,
+      "id": 34,
+      "isFeatured": true,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 20,
+      "matchupCountSE": 19,
+      "name": "Volleyball",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 36,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 1,
+      "matchupCountSE": 1,
+      "name": "Water Polo",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 37,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Padel Tennis",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 39,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 9,
+      "matchupCountSE": 9,
+      "name": "Aussie Rules",
+      "primaryMarketType": "spread"
+    },
+    {
+      "featureOrder": -1,
+      "id": 40,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Alpine Skiing",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 41,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Biathlon",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 42,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Ski Jumping",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 43,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Cross Country",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 44,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Formula 1",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 45,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 17,
+      "matchupCountSE": 17,
+      "name": "Cycling",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 46,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Bobsleigh",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 47,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Figure Skating",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 48,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Freestyle Skiing",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 49,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Luge",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 50,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Nordic Combined",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 51,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Short Track",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 52,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Skeleton",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 53,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Snow Boarding",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 54,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Speed Skating",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 55,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Olympics",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 56,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Athletics",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 57,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Crossfit",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 58,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Entertainment",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 59,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Archery",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 60,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Drone Racing",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 62,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Poker",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 63,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Motorsport",
+      "primaryMarketType": "moneyline"
+    },
+    {
+      "featureOrder": -1,
+      "id": 64,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Simulated Games",
+      "primaryMarketType": "spread"
+    },
+    {
+      "featureOrder": -1,
+      "id": 65,
+      "isFeatured": false,
+      "isHidden": false,
+      "isSticky": false,
+      "matchupCount": 0,
+      "matchupCountSE": 0,
+      "name": "Sumo",
+      "primaryMarketType": "moneyline"
+    }
+  ];
+
+  var needArray = [];
+
+  for(var sport of sports)
+  {
+    needArray.push(sport['name']);
+  };
+
+  console.log(needArray);
+  
